@@ -5,23 +5,10 @@ box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: rgb(244, 243, 241);
-    overflow-y: scroll;
-    /* overflow-x: scroll; */
+  
 
 }
 
-.container {
-    width: 94vw;
-    border-radius: 20px;
-    background-color: #FFFFFF;
-    z-index: 10;
-    box-shadow: 5px 5px 40px 5px rgb(192, 185, 185);
-
-}
 
 .navbar div {
     display: flex;
@@ -85,6 +72,7 @@ nav>div>ul>li:hover {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 1rem;
+    margin-bottom: 1rem;
 }
 
 .main-section>.main-section-start {
@@ -142,18 +130,22 @@ nav>div>ul>li:hover {
 .main-section>.main-section-start>.getintouch-button {
     max-width: 10rem;
     height: 2rem;
-    max-height: 6rem;
     background-color: black;
-    color: #FFFFFF;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
-
 .main-section>.main-section-start>.getintouch-button:hover {
-
     background-color: #FFFFFF;
     color: black;
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.3s;
+
 }
 
 .main-section>img {
