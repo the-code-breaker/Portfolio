@@ -9,13 +9,13 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     background-color: rgb(244, 243, 241);
-    overflow-y: scroll; 
-    /* overflow-x: hidden; */
+    overflow-y: scroll;
+    /* overflow-x: scroll; */
 
 }
 
 .container {
-    width: 80vw;
+    width: 94vw;
     border-radius: 20px;
     background-color: #FFFFFF;
     z-index: 10;
@@ -54,6 +54,12 @@ nav>div>ul>li {
     font-weight: 540;
 }
 
+nav>div>ul>li:hover {
+    cursor: pointer;
+}
+
+
+
 .navbar>div>.button-contactus-navbar {
     display: flex;
     align-self: center;
@@ -67,6 +73,11 @@ nav>div>ul>li {
     font-size: 16px;
 
 }
+.navbar>div>.button-contactus-navbar:hover {
+  background-color: black;
+  color: #FFFFFF;
+  cursor: pointer;
+}
 
 
 .main-section {
@@ -79,7 +90,7 @@ nav>div>ul>li {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    flex: 3 0 20%;
+    flex: 3 10 20%;
     font-family: Arial, Helvetica, sans-serif;
     padding-left: 8rem;
     padding-top: 1rem;
@@ -88,29 +99,35 @@ nav>div>ul>li {
 }
 
 .main-section>.main-section-start>h1 {
-    font-size: 100px;
+
+
+    display: inline-block;
+    font-size: 6rem;
 
 }
 
-.main-section>.main-section-start>.circle-design {
+
+.my-Name {
+ display: inline-block;
+}
+
+.my-Name::after {
+    
+    content: 'rav';
+    display: inline-flex;
+    align-items: center;
     width: 150px;
     height: 150px;
-    max-width: 150px;
-    max-height: 150px;
+    vertical-align: baseline;
     border-radius: 50%;
-    color: #3939e7;
-    display: inline-block;
-    position: absolute;
-    margin-top: 4rem;
-    margin-left: 31rem;
-    background-color: rgb(153, 153, 37);
-    z-index: -1;
-    box-shadow: 5px 5px 50px 10px rgb(15, 188, 47);
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; 
+    background-color: #6ec819;
+
 }
 
 @media(max-width: 420px) {
     .main-section>.main-section-start>.circle-design {
-        display: none;
+        /* display: none; */
     }
 
 }
@@ -139,9 +156,8 @@ nav>div>ul>li {
 
 .main-section>img {
     width: 50rem;
-    position: relative;
-    top: -10rem;
-    right: -2rem;
+    margin-top: -10rem ;
+    z-index: -1;
 }
 
 .main-section>.social-sites {
