@@ -84,6 +84,7 @@ nav>div>ul>li:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .main-section>.main-section-start {
@@ -94,6 +95,7 @@ nav>div>ul>li:hover {
     font-family: Arial, Helvetica, sans-serif;
     padding-left: 8rem;
     padding-top: 1rem;
+
 
 
 }
@@ -155,9 +157,7 @@ nav>div>ul>li:hover {
 }
 
 .main-section>img {
-    width: 50rem;
-    margin-top: -10rem ;
-    z-index: -1;
+  width: 40rem;
 }
 
 .main-section>.social-sites {
